@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  tomcat:
+    max-swallow-size: 100MB
+
+spring:
+  datasource:
+    url: ${MYSQL_URL:jdbc:mysql://localhost:3307/${MYSQL_DATABASE:chat}?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai}
+    username: ${MYSQL_USER:chengliao}
+    password: ${MYSQL_PASSWORD}
+  jpa:
+    hibernate.ddl-auto: update
+    open-in-view: false
+  servlet:
+    multipart:
+      max-file-size: 80MB
+      max-request-size: 80MB
+
+chat:
+  upload-dir: ${CHAT_UPLOAD_DIR:uploads}
+  allowed-origins: ${CORS_ORIGINS:http://localhost:*}

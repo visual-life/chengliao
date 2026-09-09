@@ -1,0 +1,67 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+**/key.properties
+**/*.jks
+**/*.keystore
+**/*.p12
+**/*.pfx
+**/*.pem
+**/*.key
+**/google-services.json
+**/GoogleService-Info.plist
+
+# User-generated content
+/server/uploads/
+
+# Flutter / Dart
+/client/.dart_tool/
+/client/.pub-cache/
+/client/.packages
+/client/.flutter-plugins
+/client/.flutter-plugins-dependencies
+/client/build/
+/client/build-*/
+/client/b/
+/client/c/
+/client/d/
+/client/e/
+/client/coverage/
+/client/windows/flutter/ephemeral/
+/client/android/.gradle/
+/client/android/.kotlin/
+/client/android/local.properties
+/client/android/app/debug/
+/client/android/app/profile/
+/client/android/app/release/
+
+# Java / Maven
+/server/target/
+*.class
+
+# Local tools, caches, and generated releases
+/work/
+/outputs/
+/nuget_stub.obj
+*.apk
+*.aab
+*.exe
+*.msi
+*.zip
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.bak
